@@ -22,6 +22,7 @@
 #include "Plalindrome.h"
 #include "Permutation.h"
 #include "ArrayList.h"
+#include "HalfNum.h"
 #include <iostream>
 #include <stdio.h>
 
@@ -80,17 +81,20 @@ int main() {
 	int start,  len;
 	len  = plalindrome(str,sizeof(str),start);
 	std::cout<<start << " "<<len;
-*/
 
-/*	int a[] = {1, 2, 3, 4, 5, 6, 7, 8 , 11, 12, 13, 14, 15, 16, 17, 18};
+	int a[] = {1, 2, 3, 4, 5, 6, 7, 8 , 11, 12, 13, 14, 15, 16, 17, 18};
 	arrayList(a,8);
 
 	for(int i =0; i<sizeof(a)/sizeof(int); i++)
-		printf("%d ",a[i]); */
+		printf("%d ",a[i]);
 
 	std::string a = "abcbdab";
 	std::string b = "bdcaba";
 	maxCommonString(a,b);
-
+*/
+	int a[] = {4, 5, 4, 2, 5, 5, 5, 5, 1, 3};
+	int n  = sizeof(a)/sizeof(int);
+	HalfNum hf(a,n);
+	std::cout<<hf.findHalfNum();
 	return 0;
 }

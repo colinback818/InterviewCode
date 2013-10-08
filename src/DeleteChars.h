@@ -11,6 +11,7 @@
 #include <string.h>
 
 namespace Interview {
+
 void setupMap(int *map, const char* pattern) {
 	//init map[256]
 	for(int i=0; i<256; i++)

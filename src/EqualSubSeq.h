@@ -11,6 +11,7 @@
 #include <stdio.h>
 
 // 15 = 1+2+3+4+5 = 7+8
+namespace Interview {
 
 void EqualSubSeq(int n) {
 	if (n < 0)
@@ -37,6 +38,6 @@ void EqualSubSeq(int n) {
 		}
 	}
 }
-
+}
 
 #endif /* EQUALSUBSEQ_H_ */
